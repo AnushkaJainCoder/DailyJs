@@ -5,6 +5,7 @@ import React, { Children } from 'react';
 import Quotes from './Components/quotes';
 import Button from './Components/quotes';
 import Counter from './Components/Counter';
+import LifecycleCounter from './Components/StateExample/LifeCycleExample/LifeCycle';
 
 function App() {
 
@@ -22,51 +23,52 @@ function App() {
   )
   const el = React.createElement(
     'h1',
-    {className: 'josh'},
+    { className: 'josh' },
     'I can do it and I will'
   )
   const el2 = {
     type: 'h1',
-    props:{
+    props: {
       className: 'josh',
       Children: 'please give me some shine'
     }
-    
+
   }
 
-  function formatName(user){
-    if(user){
-        return (
-          <>
-           Hello {user.name} {user.ppo}
-          </>
-        )
+  function formatName(user) {
+    if (user) {
+      return (
+        <>
+          Hello {user.name} {user.ppo}
+        </>
+      )
     }
-    else{
+    else {
       return (
         <p>No user found</p>
       )
     }
-    
+
   }
 
   return (
     <div className="App">
       {/* <Button lebel={'click me'} click={() => alert('you clicked')} /> */}
-        <h1>{formatName() }</h1>
+      <h1>{formatName()}</h1>
 
 
-{/* ---------------- Components with props and state-------------------*/}
+      {/* ---------------- Components with props and state-------------------*/}
 
       {/* <Quotes name= {'Anushka'}/> */}
       {/* <p>{count}</p> */}
-
       {/* <Button mssg = "Be happy Anushka "/> */}
 
-      <Counter />
+      {/* <Counter /> */}
 
-      
-      
+      {/* Lifecycle */}
+
+      <LifecycleCounter />
+
 
     </div>
   );
