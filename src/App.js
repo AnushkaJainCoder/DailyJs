@@ -4,6 +4,7 @@ import { type } from '@testing-library/user-event/dist/type';
 import React, { Children } from 'react';
 import Quotes from './Components/quotes';
 import Button from './Components/quotes';
+import Counter from './Components/Counter';
 
 function App() {
 
@@ -14,6 +15,8 @@ function App() {
     name: 'Anushka Jain',
     ppo: 20000000
   }
+
+  // react act as a object
   const el1 = (
     <h1 className='josh'>I can do it and I will</h1>
   )
@@ -30,6 +33,7 @@ function App() {
     }
     
   }
+
   function formatName(user){
     if(user){
         return (
@@ -52,12 +56,16 @@ function App() {
         <h1>{formatName() }</h1>
 
 
-{/* ---------------- Components with props-------------------*/}
+{/* ---------------- Components with props and state-------------------*/}
 
       {/* <Quotes name= {'Anushka'}/> */}
       {/* <p>{count}</p> */}
 
-      <Button mssg = "Be happy Anushka "/>
+      {/* <Button mssg = "Be happy Anushka "/> */}
+
+      <Counter />
+
+      
       
 
     </div>
