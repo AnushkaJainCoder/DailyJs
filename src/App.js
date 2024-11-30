@@ -5,7 +5,8 @@ import React, { Children } from 'react';
 import Quotes from './Components/quotes';
 import Button from './Components/quotes';
 import Counter from './Components/Counter';
-import LifecycleCounter from './Components/StateExample/LifeCycleExample/LifeCycle';
+import LifecycleCounter from './Components/LifeCycleExample/LifeCycle';
+import LoginControls from './Components/ConditionalRendering/LoginControls';
 
 function App() {
 
@@ -67,8 +68,8 @@ function App() {
 
       {/* Lifecycle */}
 
-      <LifecycleCounter />
-
+      {/* <LifecycleCounter /> */}
+      <LoginControls />
 
     </div>
   );
