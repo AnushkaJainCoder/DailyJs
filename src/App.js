@@ -8,6 +8,7 @@ import Counter from './Components/Counter';
 import LifecycleCounter from './Components/LifeCycleExample/LifeCycle';
 import LoginControls from './Components/ConditionalRendering/LoginControls';
 import ReadMails from './Components/ConditionalRendering/ReadMail';
+import AccounBalance from './Components/ConditionalRendering/AccountAlert';
 
 function App() {
 
@@ -77,6 +78,7 @@ function App() {
       {/* conditional rendering */}
       <LoginControls />
       <ReadMails mail = {mail}/>
+      <AccounBalance />
 
     </div>
   );

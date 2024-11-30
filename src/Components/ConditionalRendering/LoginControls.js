@@ -30,6 +30,8 @@ export default class LoginControls extends React.Component {
         }
         return (
             <div >
+                {this.state.isLoggedIn? <button onClick={this.handleChange}>logout</button> 
+                : <button onClick={this.handleChange}>login</button> }
                 {butt}
                 {txt}
             </div>
