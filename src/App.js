@@ -7,6 +7,7 @@ import Button from './Components/quotes';
 import Counter from './Components/Counter';
 import LifecycleCounter from './Components/LifeCycleExample/LifeCycle';
 import LoginControls from './Components/ConditionalRendering/LoginControls';
+import ReadMails from './Components/ConditionalRendering/ReadMail';
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
 
   }
 
+  const mail = ['selected', 'coding round', 'interview round', 'offer letter']
   function formatName(user) {
     if (user) {
       return (
@@ -69,7 +71,12 @@ function App() {
       {/* Lifecycle */}
 
       {/* <LifecycleCounter /> */}
+
+
+
+      {/* conditional rendering */}
       <LoginControls />
+      <ReadMails mail = {mail}/>
 
     </div>
   );
