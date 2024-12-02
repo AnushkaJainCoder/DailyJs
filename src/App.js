@@ -11,6 +11,7 @@ import ReadMails from './Components/ConditionalRendering/ReadMail';
 import AccounBalance from './Components/ConditionalRendering/AccountAlert';
 import { people } from './Components/List & Keys/database';
 import { getImageUrl } from './Components/List & Keys/imageUrl';
+import FormComponent from './Components/Hooks/Usestate';
 
 
 function App() {
@@ -19,17 +20,21 @@ function App() {
   //   return <button onClick={click}>{lebel}</button>
   // }
 
-  const lstItems = people.map(p => 
+
+  // -------------------------use list and keys---------------------
+  const lstItems = people.map(p =>
 
     <li key={p.id}>
-       <img src = {getImageUrl(p)} alt={p.name} />
-       <p>
+      <img src={getImageUrl(p)} alt={p.name} />
+      <p>
         <b>{p.name}</b>
-        {' ' + p.profession + ''+ p.accomplishment }
-       </p>
+        {' ' + p.profession + '' + p.accomplishment}
+      </p>
     </li>
 
   )
+
+  // ---------------------------------------------
   const user = {
     name: 'Anushka Jain',
     ppo: 20000000
@@ -70,7 +75,7 @@ function App() {
 
   }
 
-  const num = [1,2,3,4,5,6];
+  const num = [1, 2, 3, 4, 5, 6];
   const number = num.map((n) => <li>{n}</li>);
 
   return (
@@ -93,15 +98,21 @@ function App() {
 
 
 
-      {/* conditional rendering */}
+      {/*---------------------- conditional rendering */}
       <LoginControls />
-      <ReadMails mail = {mail}/>
+      <ReadMails mail={mail} />
       <AccounBalance />
+
+      {/*---------------------- list and keys */}
       <ul>
         {number}
       </ul>
 
       <ul>{lstItems}</ul>
+
+
+      {/*------------------- hooks */}
+      <FormComponent />
 
 
     </div>
