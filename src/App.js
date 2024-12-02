@@ -55,6 +55,9 @@ function App() {
 
   }
 
+  const num = [1,2,3,4,5,6];
+  const number = num.map((n) => <li>{n}</li>);
+
   return (
     <div className="App">
       {/* <Button lebel={'click me'} click={() => alert('you clicked')} /> */}
@@ -79,6 +82,10 @@ function App() {
       <LoginControls />
       <ReadMails mail = {mail}/>
       <AccounBalance />
+      <ul>
+        {number}
+      </ul>
+
 
     </div>
   );
