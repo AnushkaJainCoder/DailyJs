@@ -9,12 +9,27 @@ import LifecycleCounter from './Components/LifeCycleExample/LifeCycle';
 import LoginControls from './Components/ConditionalRendering/LoginControls';
 import ReadMails from './Components/ConditionalRendering/ReadMail';
 import AccounBalance from './Components/ConditionalRendering/AccountAlert';
+import { people } from './Components/List & Keys/database';
+import { getImageUrl } from './Components/List & Keys/imageUrl';
+
 
 function App() {
 
   // const Button = ({lebel, click}) => {
   //   return <button onClick={click}>{lebel}</button>
   // }
+
+  const lstItems = people.map(p => 
+
+    <li key={p.id}>
+       <img src = {getImageUrl(p)} alt={p.name} />
+       <p>
+        <b>{p.name}</b>
+        {' ' + p.profession + ''+ p.accomplishment }
+       </p>
+    </li>
+
+  )
   const user = {
     name: 'Anushka Jain',
     ppo: 20000000
@@ -85,6 +100,8 @@ function App() {
       <ul>
         {number}
       </ul>
+
+      <ul>{lstItems}</ul>
 
 
     </div>
