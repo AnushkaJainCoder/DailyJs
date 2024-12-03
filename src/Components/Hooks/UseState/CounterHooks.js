@@ -3,21 +3,25 @@ import { useState } from "react"
 export default function CounterHooks(){
 
     //--------------------------------- initialization using function
-        // const initialFun = () =>{
+        // const initialFun = () => {
         //     console.log('initial fun');
             
         //     return 20
         // }
         //-------------pass by reference useState(initialFun);
-        // const [count, setCount] = useState(initialFun());
+            // const [count, setCount] = useState(initialFun());
 
     //----------------------------------- initialization directly by passing value
         // const [count, setCount] = useState(0);
 
     // pass object
-    const [state, setState] = useState({count: 4, age: 'not born'});
-    const count = state.count;
-    const age = state.age;
+        // const [state, setState] = useState({count: 4, age: 'not born'});
+        // const count = state.count;
+        // const age = state.age;
+
+    // use multiple usestate
+    const [count, setCount] = useState(0);
+    const [age, setAge] = useState(21);
 
 
 
@@ -35,17 +39,16 @@ export default function CounterHooks(){
             // setCount(prev => prev +1);
             // setCount(prev => prev +1);
 
-            //  if we are using object to initialize multiple things then make sure, you are setting 
-            // the value for both othervise it will gonna override the prev value
-            setState(prev => {
-                return {
-                    ...prev,
-                    count: prev.count +1        // remove theme     
-                }
-            })
+        //  if we are using object to initialize multiple things then make sure, you are setting 
+        // the value for both othervise it will gonna override the prev value
+            // setState(prev => {
+            //     return {
+            //         ...prev,                    // considering all the item in object declaration
+            //         count: prev.count +1        // if use alone remove theme     
+            //     }
+            // })
         
-        
-        
+            setCount(prev => prev+1)
     }
     return (
         <>
