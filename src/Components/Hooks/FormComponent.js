@@ -6,10 +6,9 @@ export default function FormComponent(){
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        alert(`You are best ${name}`)
+        setame('');
         console.log({name});
-        
-
-        // alert()
     }
     return (
         <>

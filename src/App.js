@@ -11,7 +11,8 @@ import ReadMails from './Components/ConditionalRendering/ReadMail';
 import AccounBalance from './Components/ConditionalRendering/AccountAlert';
 import { people } from './Components/List & Keys/database';
 import { getImageUrl } from './Components/List & Keys/imageUrl';
-import FormComponent from './Components/Hooks/Usestate';
+import FormComponent from './Components/Hooks/FormComponent';
+import CounterHooks from './Components/Hooks/CounterHooks';
 
 
 function App() {
@@ -104,15 +105,16 @@ function App() {
       <AccounBalance />
 
       {/*---------------------- list and keys */}
-      <ul>
+      {/* <ul>
         {number}
       </ul>
 
-      <ul>{lstItems}</ul>
+      <ul>{lstItems}</ul> */}
 
 
       {/*------------------- hooks */}
       <FormComponent />
+      <CounterHooks />
 
 
     </div>
