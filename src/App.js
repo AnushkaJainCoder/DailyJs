@@ -11,8 +11,9 @@ import ReadMails from './Components/ConditionalRendering/ReadMail';
 import AccounBalance from './Components/ConditionalRendering/AccountAlert';
 import { people } from './Components/List & Keys/database';
 import { getImageUrl } from './Components/List & Keys/imageUrl';
-import FormComponent from './Components/Hooks/FormComponent';
-import CounterHooks from './Components/Hooks/CounterHooks';
+import FormComponent from './Components/Hooks/UseState/FormComponent';
+import CounterHooks from './Components/Hooks/UseState/CounterHooks';
+import SocialMedia from './Components/Hooks/UseEffect/SocialMedia';
 
 
 function App() {
@@ -113,8 +114,10 @@ function App() {
 
 
       {/*------------------- hooks */}
-      <FormComponent />
-      <CounterHooks />
+      {/* <FormComponent />
+      <CounterHooks /> */}
+
+      <SocialMedia />
 
 
     </div>
