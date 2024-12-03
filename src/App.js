@@ -14,6 +14,7 @@ import { getImageUrl } from './Components/List & Keys/imageUrl';
 import FormComponent from './Components/Hooks/UseState/FormComponent';
 import CounterHooks from './Components/Hooks/UseState/CounterHooks';
 import SocialMedia from './Components/Hooks/UseEffect/SocialMedia';
+import SetWindowSize from './Components/Hooks/UseEffect/SetWindowSize';
 
 
 function App() {
@@ -117,7 +118,8 @@ function App() {
       {/* <FormComponent />
       <CounterHooks /> */}
 
-      <SocialMedia />
+      {/* <SocialMedia /> */}
+      <SetWindowSize />
 
 
     </div>
