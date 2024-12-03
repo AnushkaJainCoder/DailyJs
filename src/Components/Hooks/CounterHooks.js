@@ -15,7 +15,7 @@ export default function CounterHooks(){
         // const [count, setCount] = useState(0);
 
     // pass object
-    const [state, setState] = useState({count: 4, age: 20});
+    const [state, setState] = useState({count: 4, age: 'not born'});
     const count = state.count;
     const age = state.age;
 
@@ -35,9 +35,12 @@ export default function CounterHooks(){
             // setCount(prev => prev +1);
             // setCount(prev => prev +1);
 
+            //  if we are using object to initialize multiple things then make sure, you are setting 
+            // the value for both othervise it will gonna override the prev value
             setState(prev => {
                 return {
-                    count: prev.count +1
+                    ...prev,
+                    count: prev.count +1        // remove theme     
                 }
             })
         
@@ -46,7 +49,8 @@ export default function CounterHooks(){
     }
     return (
         <>
-            <p>{count}</p>
+            <p>{count}{age}</p>
+
             <button onClick={handleChange}>+</button>
         
         </>
