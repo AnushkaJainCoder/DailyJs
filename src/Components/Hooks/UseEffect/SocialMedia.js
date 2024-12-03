@@ -5,12 +5,18 @@ export default function SocialMedia(){
     const [items, setItems] = useState([]);
 
     useEffect(()=>{
-        // console.log('text change'); 
-        fetch(`https://jsonplaceholder.typicode.com/${text}`)
-      .then(response => response.json())
-      .then(json => setItems(json))
+        console.log('text change'); 
+        // try {
+            
+            fetch(`https://jsonplaceholder.typicode.com/${text}`)
+         .then(response => response.json())
+         .then(json => setItems(json))
+        // } catch (error) {
+        //     console.log(error);
+            
+        // }
         
-    }, [text])
+    })
     return (
         <>
             <div>
