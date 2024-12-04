@@ -8,7 +8,6 @@ export default function FocusText(){
         console.log(inputRef.current);
         inputRef.current.focus();
         // inputRef.current.value = 'hello moto'
-        
     }
 
     return (
