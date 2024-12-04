@@ -17,6 +17,7 @@ import SocialMedia from './Components/Hooks/UseEffect/SocialMedia';
 import SetWindowSize from './Components/Hooks/UseEffect/SetWindowSize';
 import DoubleNumber from './Components/Hooks/UseMemo/DoubleNumber';
 import NameChange from './Components/Hooks/UseRef/NameChange';
+import FocusText from './Components/Hooks/UseRef/Focus';
 
 
 function App() {
@@ -126,6 +127,7 @@ function App() {
       <DoubleNumber />
 
       <NameChange />
+      <FocusText />
 
 
     </div>
