@@ -128,10 +128,10 @@ function App() {
 
       <DoubleNumber />
 
-      <NameChange />
-      <FocusText /> */}
-      <NameAndPrevName />
-      <Diff />
+      <NameChange /> */}
+      <FocusText />
+      {/* <NameAndPrevName /> */}
+      {/* <Diff /> */}
 
 
     </div>

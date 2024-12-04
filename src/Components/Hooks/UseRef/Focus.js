@@ -4,10 +4,10 @@ export default function FocusText(){
     const [name, setName] = useState('');
     const inputRef = useRef();
 
-    const focus = () => {
+    const handleClick = () => {
         console.log(inputRef.current);
-        // inputRef.current.focus();
-        inputRef.current.value = 'hello moto'
+        inputRef.current.focus();
+        // inputRef.current.value = 'hello moto'
         
     }
 
@@ -15,7 +15,7 @@ export default function FocusText(){
         <>
             <input ref={inputRef} type="text" onChange={(e) => setName(e.target.value)}/>
             <div>My name is  {name}</div>
-            <button onClick={focus}>Focus</button>
+            <button onClick={handleClick}>Focus</button>
         </>
     )
 }
