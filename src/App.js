@@ -16,6 +16,7 @@ import CounterHooks from './Components/Hooks/UseState/CounterHooks';
 import SocialMedia from './Components/Hooks/UseEffect/SocialMedia';
 import SetWindowSize from './Components/Hooks/UseEffect/SetWindowSize';
 import DoubleNumber from './Components/Hooks/UseMemo/DoubleNumber';
+import NameChange from './Components/Hooks/UseRef/NameChange';
 
 
 function App() {
@@ -123,6 +124,8 @@ function App() {
       <SetWindowSize />
 
       <DoubleNumber />
+
+      <NameChange />
 
 
     </div>
