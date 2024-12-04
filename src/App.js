@@ -20,6 +20,7 @@ import NameChange from './Components/Hooks/UseRef/NameChange';
 import FocusText from './Components/Hooks/UseRef/Focus';
 import NameAndPrevName from './Components/Hooks/UseRef/NameAndPrevName';
 import Diff from './Components/Hooks/useState Or UseEffect/diff';
+import DisplayItems from './Components/Hooks/UseCallback/getList';
 
 
 function App() {
@@ -132,6 +133,8 @@ function App() {
       <FocusText />
       {/* <NameAndPrevName /> */}
       {/* <Diff /> */}
+
+      <DisplayItems />
 
 
     </div>
