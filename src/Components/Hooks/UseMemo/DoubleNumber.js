@@ -19,10 +19,14 @@ export default function DoubleNumber(){
         setTheme(!theme);
     }
 
-    const themeStyle = {
-        backgroundColor: theme ? 'white': 'black',
-        color: theme ? 'black': 'white'
-    }
+    const themeStyle = useMemo(() => {
+        return{
+            backgroundColor: theme ? 'white': 'black',
+            color: theme ? 'black': 'white'
+        }
+
+        
+    },[theme]);
 
     useEffect(()=>{
         // const endtime = performance.now();
@@ -30,7 +34,7 @@ export default function DoubleNumber(){
         console.log("theme changed");
        
         
-    },[theme]);
+    },[themeStyle]);
 
     return (
         <>
