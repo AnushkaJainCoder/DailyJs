@@ -18,6 +18,8 @@ import SetWindowSize from './Components/Hooks/UseEffect/SetWindowSize';
 import DoubleNumber from './Components/Hooks/UseMemo/DoubleNumber';
 import NameChange from './Components/Hooks/UseRef/NameChange';
 import FocusText from './Components/Hooks/UseRef/Focus';
+import NameAndPrevName from './Components/Hooks/UseRef/NameAndPrevName';
+import Diff from './Components/Hooks/useState Or UseEffect/diff';
 
 
 function App() {
@@ -122,12 +124,14 @@ function App() {
       <CounterHooks /> */}
 
       {/* <SocialMedia /> */}
-      <SetWindowSize />
+      {/* <SetWindowSize />
 
       <DoubleNumber />
 
       <NameChange />
-      <FocusText />
+      <FocusText /> */}
+      <NameAndPrevName />
+      <Diff />
 
 
     </div>
