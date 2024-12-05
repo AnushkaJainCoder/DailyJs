@@ -21,6 +21,7 @@ import FocusText from './Components/Hooks/UseRef/Focus';
 import NameAndPrevName from './Components/Hooks/UseRef/NameAndPrevName';
 import Diff from './Components/Hooks/useState Or UseEffect/diff';
 import DisplayItems from './Components/Hooks/UseCallback/getList';
+import ComponentA from './Components/Hooks/UseContext/ComponentA';
 
 
 function App() {
@@ -130,11 +131,13 @@ function App() {
       <DoubleNumber />
 
       <NameChange /> */}
-      <FocusText />
+      {/* <FocusText /> */}
       {/* <NameAndPrevName /> */}
       {/* <Diff /> */}
 
-      <DisplayItems />
+      {/* <DisplayItems /> */}
+
+      <ComponentA />
 
 
     </div>
