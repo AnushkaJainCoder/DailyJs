@@ -3,7 +3,9 @@ import { useEffect, useState } from "react"
 export default function List({getitems}){
     const [items, setItems] = useState([]);
     useEffect(()=>{
-        setItems(getitems(3));
+        setItems(getitems());
+        console.log('ITEMS CHANGED');
+        
     },[getitems])
     return (
         <>
