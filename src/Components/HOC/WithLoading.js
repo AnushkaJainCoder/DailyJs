@@ -5,5 +5,6 @@ export default function withLoading (WrappedComponent) {
         if(isLoading){
             return <div>Loading...</div>
         }
+        return <WrappedComponent {...props} />
     };
 };

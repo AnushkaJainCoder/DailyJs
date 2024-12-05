@@ -22,6 +22,8 @@ import NameAndPrevName from './Components/Hooks/UseRef/NameAndPrevName';
 import Diff from './Components/Hooks/useState Or UseEffect/diff';
 import DisplayItems from './Components/Hooks/UseCallback/getList';
 import ComponentA from './Components/Hooks/UseContext/ComponentA';
+import withLoading from './Components/HOC/WithLoading';
+import DataDisplay from './Components/HOC/DataDisplay';
 
 
 function App() {
@@ -87,6 +89,7 @@ function App() {
 
   const num = [1, 2, 3, 4, 5, 6];
   const number = num.map((n) => <li>{n}</li>);
+  const EnhancedDataDisplay = withLoading(DataDisplay);
 
   return (
     <div className="App">
@@ -137,7 +140,9 @@ function App() {
 
       {/* <DisplayItems /> */}
 
-      <ComponentA />
+      {/* <ComponentA /> */}
+      {/* <With */}
+      <EnhancedDataDisplay isLoading={false} data ={{ message: 'Hello, World!'}} />
 
 
     </div>
