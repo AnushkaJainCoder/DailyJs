@@ -1,6 +1,9 @@
 import { useContext, useState } from "react"
 import { UserContext } from "./ComponentA"
 
+
+// export const name = createContext('nanu');
+
 export default function ComponentD(props){
 
     // const [user, setUser] = useState('');
