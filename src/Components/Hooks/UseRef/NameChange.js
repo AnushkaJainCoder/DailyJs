@@ -16,6 +16,7 @@ export default function NameChange(){
             <div>My name is {name}</div>
             <div>render {renderCount.current}</div>
             
+            
         </>
     )
 }

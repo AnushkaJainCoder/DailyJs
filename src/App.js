@@ -24,6 +24,7 @@ import DisplayItems from './Components/Hooks/UseCallback/getList';
 import ComponentA from './Components/Hooks/UseContext/ComponentA';
 import withLoading from './Components/HOC/WithLoading';
 import DataDisplay from './Components/HOC/DataDisplay';
+import IncOrDecButton from './Components/ConditionalRendering/IncOrDecButton';
 
 
 function App() {
@@ -129,11 +130,11 @@ function App() {
       <CounterHooks /> */}
 
       {/* <SocialMedia /> */}
-      {/* <SetWindowSize />
+      {/* <SetWindowSize /> */}
 
       <DoubleNumber />
 
-      <NameChange /> */}
+      {/* <NameChange /> */}
       {/* <FocusText /> */}
       {/* <NameAndPrevName /> */}
       {/* <Diff /> */}
@@ -142,9 +143,9 @@ function App() {
 
       {/* <ComponentA /> */}
       {/* <With */}
-      <EnhancedDataDisplay isLoading={false} data ={{ message: 'Hello, World!'}} />
+      {/* <EnhancedDataDisplay isLoading={false} data ={{ message: 'Hello, World!'}} />
 
-
+        <IncOrDecButton /> */}
     </div>
   );
 }

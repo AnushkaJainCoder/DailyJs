@@ -6,12 +6,14 @@ export default function DoubleNumber(){
     const startTimeRef = useRef(0);
 
     const doubleNumber = useMemo(() => {
+
         startTimeRef.current = performance.now();
         for(let i = 0; i < 1000;i++){}
         const endtime = performance.now();
         const dration = endtime - startTimeRef.current;
         console.log(`time taken to change theme ${dration.toFixed(2)}ms`);
         return number * 2;
+        
     },[number]);
 
     const handleChange = () => {
@@ -24,8 +26,6 @@ export default function DoubleNumber(){
             backgroundColor: theme ? 'white': 'black',
             color: theme ? 'black': 'white'
         }
-
-        
     },[theme]);
 
     useEffect(()=>{

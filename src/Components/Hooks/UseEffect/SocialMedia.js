@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 
 export default function SocialMedia(){
-    const [text, setText] = useState('');
-    const [items, setItems] = useState([]);
+        const [text, setText] = useState('');
+        const [items, setItems] = useState([]);
 
     useEffect(()=>{
         console.log('text change'); 
@@ -16,7 +16,7 @@ export default function SocialMedia(){
             
         // }
         
-    })
+    },[])
     return (
         <>
             <div>
