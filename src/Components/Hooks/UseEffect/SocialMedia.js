@@ -8,11 +8,12 @@ export default function SocialMedia(){
         console.log('text change'); 
         // try {
             
-            fetch(`https://jsonplaceholder.typicode.com/${text}`)
-         .then(response => response.json())
-         .then(json => setItems(json))
+        fetch(`https://jsonplaceholder.typicode.com/${text}`)
+        .then(response => response.json())
+        .then(json => setItems(json));
         // } catch (error) {
         //     console.log(error);
+
             
         // }
         
@@ -32,3 +33,43 @@ export default function SocialMedia(){
         </>
     )
 }
+
+
+
+
+
+// function 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

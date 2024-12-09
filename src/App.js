@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { type } from '@testing-library/user-event/dist/type';
-import React, { Children } from 'react';
+import React, { Children, useState } from 'react';
 import Quotes from './Components/quotes';
 import Button from './Components/quotes';
 import Counter from './Components/Counter';
@@ -25,6 +25,8 @@ import ComponentA from './Components/Hooks/UseContext/ComponentA';
 import withLoading from './Components/HOC/WithLoading';
 import DataDisplay from './Components/HOC/DataDisplay';
 import IncOrDecButton from './Components/ConditionalRendering/IncOrDecButton';
+import InputA from './Components/Lifting state up/InputA';
+import InputB from './Components/Lifting state up/InputB';
 
 
 function App() {
@@ -70,7 +72,11 @@ function App() {
     }
 
   }
-
+  const [text, setText] = useState('');
+  const handleTextChange = (nt) =>{
+    setText(nt)
+  }
+ 
   const mail = ['selected', 'coding round', 'interview round', 'offer letter']
   function formatName(user) {
     if (user) {
@@ -114,8 +120,8 @@ function App() {
 
       {/*---------------------- conditional rendering */}
       <LoginControls />
-      <ReadMails mail={mail} />
-      <AccounBalance />
+      {/* <ReadMails mail={mail} />
+      <AccounBalance /> */}
 
       {/*---------------------- list and keys */}
       {/* <ul>
@@ -132,7 +138,7 @@ function App() {
       {/* <SocialMedia /> */}
       {/* <SetWindowSize /> */}
 
-      <DoubleNumber />
+      {/* <DoubleNumber /> */}
 
       {/* <NameChange /> */}
       {/* <FocusText /> */}
@@ -146,6 +152,8 @@ function App() {
       {/* <EnhancedDataDisplay isLoading={false} data ={{ message: 'Hello, World!'}} />
 
         <IncOrDecButton /> */}
+        {/* <InputA text={text} handleTextChange = {handleTextChange}/>
+        <InputB text = {text} /> */}
     </div>
   );
 }
